@@ -17,6 +17,7 @@ pipeline {
                     sh '''
                         ls -la
                         cat "./mega.txt"
+                        ls -la
                     '''
                 }
                 // configFileProvider([configFile(fileId: '7d1228ec-e01f-4e69-a655-3a13512f7f73', targetLocation: './mega.txt', replacements: [
