@@ -7,6 +7,9 @@ pipeline {
         SSH_HOSTNAME = "192.168.2.27"
         SSH_HOSTPORT = "26"
     }
+    triggers {
+        githubPush()
+    }
     stages {
         stage('ssh') {
             steps {
