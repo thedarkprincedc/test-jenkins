@@ -10,7 +10,7 @@ pipeline {
     triggers {
         //githubBranches()
         githubPush()
-        pollSCM()
+        pollSCM('')
     }
     stages {
         stage('ssh') {
