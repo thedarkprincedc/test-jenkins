@@ -8,6 +8,7 @@ pipeline {
         SSH_HOSTPORT = "26"
     }
     triggers {
+        githubBranches()
         githubPush()
     }
     stages {
